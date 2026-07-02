@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Community :: BlackwellArchitecture</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="steam_frame">
+        <!-- Top Vintage Steam Header Bar -->
+        <header id="steam_header">
+            <div class="header_content">
+                <div class="logo">
+                    <span class="steam_logo_text">STEAM</span>
+                    <span class="steam_sub_text">COMMUNITY</span>
+                </div>
+                <nav class="nav_menu">
+                    <a href="#" class="nav_item active">PROFILE</a>
+                    <a href="https://github.com/BlackwellArchitecture" target="_blank" class="nav_item">GITHUB</a>
+                    <a href="https://archive.org" target="_blank" class="nav_item">ARCHIVE</a>
+                    <a href="#" class="nav_item">VIBECODE</a>
+                </nav>
+            </div>
+            <!-- Vintage Top Gloss Line -->
+            <div class="header_gloss"></div>
+        </header>
+
+        <!-- Main Wrapper -->
+        <main id="main_container">
+            <!-- Profile Header -->
+            <section id="profile_header_card">
+                <div class="profile_header_bg"></div>
+                <div class="profile_header_content">
+                    <!-- Profile Avatar Frame with Status -->
+                    <div class="avatar_area">
+                        <div class="avatar_status_border online">
+                            <img src="Images/Profile Picture.jfif" alt="BlackwellArchitecture Profile Picture" class="avatar_img" id="profile_avatar">
+                        </div>
+                    </div>
+                    
+                    <!-- User Info Text -->
+                    <div class="profile_info">
+                        <div class="username_row">
+                            <h1 id="username">BlackwellArchitecture</h1>
+                            <span class="online_tag">Online</span>
+                        </div>
+                        <div class="status_row">
+                            <span class="verified_badge" title="Verified Vibecoder">✓</span>
+                            <span class="status_text" id="vibecoder_status">Senior Vibecoder at Slop LLC</span>
+                        </div>
+                        <div class="joined_row">
+                            <span class="joined_label" id="joined_seconds_ticker">Joined June 15, 2026 (loading...)</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Header Actions (Classic Steam Style) -->
+                    <div class="header_actions">
+                        <button class="steam_btn green_btn" id="btn_follow">
+                            <span class="btn_icon">+</span> Follow Vibecoder
+                        </button>
+                        <button class="steam_btn grey_btn" id="btn_sponsor">
+                            <span class="btn_icon">$</span> Sponsor
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid Layout (Content + Sidebar) -->
+            <div class="profile_grid">
+                <!-- Left Content Column -->
+                <section class="left_column">
+                    <!-- Steam Style Nav Tabs -->
+                    <nav class="profile_tabs" id="tab_navigation">
+                        <button class="tab_link active" data-tab="overview">Overview</button>
+                        <button class="tab_link" data-tab="out-git">Out-git contributions</button>
+                        <button class="tab_link" data-tab="images">Images</button>
+                    </nav>
+
+                    <!-- Tab Contents Container -->
+                    <div class="tab_content_wrapper">
+                        
+                        <!-- TAB: Overview -->
+                        <div class="tab_pane active" id="pane_overview">
+                            <!-- Custom Info Box (Vintage Readme) -->
+                            <div class="steam_box">
+                                <div class="steam_box_header">
+                                    <h2>ABOUT BLACKWELLARCHITECTURE</h2>
+                                </div>
+                                <div class="steam_box_body">
+                                    <p class="intro_paragraph">
+                                        Welcome to my Steam-themed Github Portfolio. I specialize in crafting robust, high-performance software systems with extreme focus on code aesthetics and vintage skeuomorphic layouts. 
+                                    </p>
+                                    <p>
+                                        Vibecoding is not just a profession; it's an architectural discipline. Keeping the vibes immaculate and the slop highly structured since day one.
+                                    </p>
+                                    <div class="quote_box">
+                                        "Simplicity is the soul of efficiency, but skeuomorphism is the heart of design."
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Showcase Box: Favorite Tech (Styled like Favorite Games Showcase) -->
+                            <div class="steam_box">
+                                <div class="steam_box_header">
+                                    <h2>FAVORITE TECH SHOWCASE</h2>
+                                </div>
+                                <div class="steam_box_body showcase_grid">
+                                    <div class="showcase_item">
+                                        <div class="tech_banner html_css">CSS3 & HTML5</div>
+                                        <div class="tech_info">
+                                            <h3>Vanilla Cascading Style Sheets</h3>
+                                            <p class="playtime">9,000 hrs on record</p>
+                                            <div class="achievement_bar_container">
+                                                <div class="achievement_bar" style="width: 95%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="showcase_item">
+                                        <div class="tech_banner javascript">JAVASCRIPT</div>
+                                        <div class="tech_info">
+                                            <h3>Pure ECMAScript Logic</h3>
+                                            <p class="playtime">7,820 hrs on record</p>
+                                            <div class="achievement_bar_container">
+                                                <div class="achievement_bar" style="width: 88%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="showcase_item">
+                                        <div class="tech_banner git">GIT VERSIONING</div>
+                                        <div class="tech_info">
+                                            <h3>Git Command-line Expertise</h3>
+                                            <p class="playtime">4,300 hrs on record</p>
+                                            <div class="achievement_bar_container">
+                                                <div class="achievement_bar" style="width: 75%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB: Out-git contributions -->
+                        <div class="tab_pane" id="pane_out-git">
+                            <div class="steam_box">
+                                <div class="steam_box_header">
+                                    <h2>OUT-GIT CONTRIBUTIONS</h2>
+                                </div>
+                                <div class="steam_box_body out_git_layout">
+                                    <div class="contribution_card">
+                                        <div class="archive_logo_container">
+                                            <img src="Images/Archive Org.png" alt="Archive.org Logo" id="archive_logo">
+                                        </div>
+                                        <div class="contribution_details">
+                                            <h3>Contributions outside of github</h3>
+                                            <p class="archive_text">Archive.org archiving since 2021</p>
+                                            <div class="badge_tag">Digital Archivist</div>
+                                            <p class="contribution_desc">
+                                                Actively preserving digital history, historical software, vintage web assets, and cultural artifacts in the Internet Archive. Maintained over 100+ public collections.
+                                            </p>
+                                            <a href="https://archive.org" target="_blank" class="steam_action_link">Visit Archive Profile →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB: Images -->
+                        <div class="tab_pane" id="pane_images">
+                            <div class="steam_box">
+                                <div class="steam_box_header">
+                                    <h2>IMAGES - PROFILE PICTURE</h2>
+                                </div>
+                                <div class="steam_box_body images_tab_layout">
+                                    <div class="image_showcase">
+                                        <div class="image_frame">
+                                            <img src="Images/Profile Picture.jfif" alt="Profile Picture Large" class="large_profile_pic">
+                                        </div>
+                                        <div class="image_metadata">
+                                            <h3>Profile Picture</h3>
+                                            <table class="metadata_table">
+                                                <tr>
+                                                    <td>Title:</td>
+                                                    <td>Profile Picture</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Uploader:</td>
+                                                    <td>BlackwellArchitecture</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Role:</td>
+                                                    <td>Senior Vibecoder at Slop LLC</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Format:</td>
+                                                    <td>JFIF (JPEG)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dimensions:</td>
+                                                    <td>256 x 256 pixels</td>
+                                                </tr>
+                                            </table>
+                                            <a href="Images/Profile Picture.jfif" download class="steam_btn grey_btn image_download_btn">
+                                                Download Image File
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Interactive Steam Comment Section -->
+                    <div class="steam_box comments_section">
+                        <div class="steam_box_header comments_header">
+                            <h2>PROFILE COMMENTS (<span id="comment_count">0</span>)</h2>
+                        </div>
+                        <div class="steam_box_body">
+                            <!-- Comment Post Box -->
+                            <div class="comment_post_area">
+                                <div class="user_mini_avatar">
+                                    <img src="Images/Profile Picture.jfif" alt="Current User Mini Avatar" class="mini_avatar_img">
+                                </div>
+                                <div class="comment_input_wrapper">
+                                    <textarea id="comment_textarea" placeholder="Add a comment... (1000 characters max)" maxlength="1000"></textarea>
+                                    <div class="comment_actions">
+                                        <button class="steam_btn green_btn" id="btn_post_comment">Post Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comments List -->
+                            <div class="comments_list" id="comments_container">
+                                <!-- Dynamically populated by JS, with standard fallback in case of no JS -->
+                                <div class="no_comments_placeholder">No comments yet. Be the first to write a comment!</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Sidebar Column -->
+                <aside class="right_column">
+                    <!-- Status Display -->
+                    <div class="sidebar_widget status_widget">
+                        <h3>Currently Online</h3>
+                        <p class="game_status">Vibecoding</p>
+                        <p class="game_details">Slop LLC - IDE v2026.7</p>
+                    </div>
+
+                    <!-- Badge Cabinet -->
+                    <div class="sidebar_widget badges_widget">
+                        <div class="widget_header">
+                            <h3>Badges</h3>
+                            <span class="badge_count">3</span>
+                        </div>
+                        <div class="badges_list">
+                            <div class="badge_item" title="Senior Vibecoder at Slop LLC">
+                                <div class="badge_icon senior_vibecoder">✓</div>
+                                <div class="badge_info">
+                                    <span class="badge_title">Vibecoder Elite</span>
+                                    <span class="badge_xp">Slop LLC Certified</span>
+                                </div>
+                            </div>
+                            <div class="badge_item" title="Archive.org Archivist since 2021">
+                                <div class="badge_icon archivist_badge">🏛️</div>
+                                <div class="badge_info">
+                                    <span class="badge_title">Wayback Guardian</span>
+                                    <span class="badge_xp">Archive.org Archiver</span>
+                                </div>
+                            </div>
+                            <div class="badge_item" title="Skeuomorphism Enthusiast">
+                                <div class="badge_icon skeuo_badge">✨</div>
+                                <div class="badge_info">
+                                    <span class="badge_title">Gloss Master</span>
+                                    <span class="badge_xp">Skeuomorphism Fan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Side Stats -->
+                    <div class="sidebar_widget stats_widget">
+                        <h3>Developer Stats</h3>
+                        <ul class="stats_list">
+                            <li><span class="stat_label">GitHub commits:</span> <span class="stat_value">4,382</span></li>
+                            <li><span class="stat_label">Total pull requests:</span> <span class="stat_value">329</span></li>
+                            <li><span class="stat_label">Archived snapshots:</span> <span class="stat_value">10,000+</span></li>
+                            <li><span class="stat_label">Vibe Level:</span> <span class="stat_value text_glow">Over 9000</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Steam Profile Level (Retro representation) -->
+                    <div class="sidebar_widget level_widget">
+                        <h3>Vibecoder Level</h3>
+                        <div class="level_badge_container">
+                            <div class="level_circle">
+                                <span class="level_number">42</span>
+                            </div>
+                        </div>
+                        <p class="xp_needed">1,337 XP until next level</p>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="steam_footer">
+            <div class="footer_divider"></div>
+            <div class="footer_content">
+                <div class="footer_text">
+                    <p>© 2026 BlackwellArchitecture. All rights reserved. Powered by Slop LLC.</p>
+                    <p>All trademarks are property of their respective owners in the US and other countries.</p>
+                </div>
+                <div class="validation_badges">
+                    <span class="badge_retro">W3C XHTML 1.0</span>
+                    <span class="badge_retro">W3C CSS 2.1</span>
+                    <span class="badge_retro">IE8 OPTIMIZED</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS code -->
+    <script src="app.js"></script>
+</body>
+</html>
