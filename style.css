@@ -542,6 +542,17 @@ body {
    -------------------------------------------------------------------------- */
 .out_git_layout {
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.out_git_intro {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
 
 .contribution_card {
@@ -562,12 +573,16 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+    width: 126px;
+    height: 126px;
 }
 
-#archive_logo {
+#archive_logo, #osm_logo {
     display: block;
-    max-width: 100px;
+    max-width: 102px;
+    max-height: 102px;
     height: auto;
+    object-fit: contain;
 }
 
 .contribution_details {
